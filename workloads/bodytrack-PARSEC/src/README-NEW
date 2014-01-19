@@ -1,0 +1,32 @@
+PARSEC's way of doing things:
+make distclean
+./configure --prefix=/full/path/to/BIN-BODYTRACK
+    e.g. /home/asit/AC-workdir/PARSEC-versions/parsec-2.1/pkgs/apps/bodytrack/BIN-BODYTRACK
+make
+make install
+
+To run the binary:
+Go into BIN-BODYTRACK/bin/
+./bodytrack ../../inputs/sequenceB_4 4 4 4000 5 0 1
+
+see ./bodytrack for more help
+Output files are placed in the same folder as the input files
+
+
+NEW Way of building the binary with pragmas embedded in binary:
+
+make distclean
+./configure --prefix=/full/path/to/BIN-BODYTRACK
+    e.g. 
+./configure --prefix=/home/asit/AC-workdir/AxC-SVN-SHARED-REPO/axc/workloads/bodytrack-PARSEC/BIN CC=clang CXX=clang++
+./configure --prefix=/home/asit/AC-workdir/AxC-SVN-SHARED-REPO/axc/workloads/bodytrack-PARSEC/BIN
+
+./build_script.sh
+
+To run the binary:
+Go into BIN-BODYTRACK/bin/
+./bodytrack ../../inputs/sequenceB_4 4 4 4000 5 0 1
+
+see ./bodytrack for more help
+Output files are placed in the same folder as the input files
+

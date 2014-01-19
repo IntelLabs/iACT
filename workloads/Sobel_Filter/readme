@@ -1,0 +1,10 @@
+To compile with gcc:
+
+gcc -o sobel sobel_filter.c
+
+To compile with clang and embedd annotations and have memoization flags set:
+
+./sobel inputs/baboon.pgm baboon_output.pgm
+clang -c -emit-llvm sobel_filter.c -o test.bc 
+opt -axc -memo-flag=true test.bc -o test.opt.bc 
+clang test.opt.bc -o sobelfilter_clang -lm

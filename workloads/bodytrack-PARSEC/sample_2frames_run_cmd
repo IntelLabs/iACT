@@ -1,0 +1,1 @@
+nohup ../../tool/pin-2.12-58423-gcc.4.4.7-linux/pin -t ./../../tool/pin-2.12-58423-gcc.4.4.7-linux/source/tools/AxC-PINTOOL/obj-intel64/axcAnyl.so -d1c 16 -d1b 32 -d1a 16 -axc_c 1 -axc_b 32 -axc_a 16 -u2c 512 -u2b 32 -u2a 16 -axc ../../tool/pin-2.12-58423-gcc.4.4.7-linux/source/tools/AxC-PINTOOL/functionListAxC.txt -- ./BIN/bin/bodytrack inputs/sequenceB_261 4 2 4000 5 4 1 &
